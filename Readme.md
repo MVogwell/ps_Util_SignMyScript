@@ -41,3 +41,4 @@ To enable this script to sign other scripts it itself has to first be signed. To
 3) Run the command: $ScriptPath = "here enter the path you have saved ps_Util_SignMyScript.ps1 to"
 4) Run the command: $acert =(dir Cert:\CurrentUser\My -CodeSigningCert)[0]
 5) Run the command: Set-AuthenticodeSignature $ScriptPath -Certificate $acert
+
