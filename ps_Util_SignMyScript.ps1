@@ -25,6 +25,7 @@
     Version history:
         1.0 - Initial tested release
         1.1 - Updated to remove evil Write-Host and added error handling
+
 #>
 
 [CmdletBinding()]
