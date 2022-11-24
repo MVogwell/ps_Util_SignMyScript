@@ -12,7 +12,7 @@ This script takes the first available "publishing" certificate in the personal c
 * Key Size: 2048
 * Friendly name: Add your name and the date
 * Submit and wait, response Yes to the popup
-* Select ‘install certificate’
+* Select "install certificate"
 * Open MMC.exe > File > Add/Remove Snapin > Select the certificate snapin (for the user)
 * Navigate to Personal > Certificates
 * Export the newly created certificate (look for the friendly name) to pst with a temporary password
@@ -38,6 +38,6 @@ To enable this script to sign other scripts it itself has to first be signed. To
 
 1) Create a CodeSigning certificate as per the details above
 2) Open powershell (not elevated but as your normal user account as it is this account that has certificate
-3) Run the command: $ScriptPath = "<here enter the path you have saved ps_Util_SignMyScript.ps1 to>"
+3) Run the command: $ScriptPath = "here enter the path you have saved ps_Util_SignMyScript.ps1 to"
 4) Run the command: $acert =(dir Cert:\CurrentUser\My -CodeSigningCert)[0]
 5) Run the command: Set-AuthenticodeSignature $ScriptPath -Certificate $acert
